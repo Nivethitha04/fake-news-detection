@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/button_background_5"
+    tools:context=".MyProfile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@color/colorPrimary"
+        android:elevation="5dp">
+
+        <ImageButton
+            android:id="@+id/back_at_profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@color/colorPrimary"
+            android:tint="@color/text"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Frank.ly"
+            android:textSize="20sp"
+            android:textColor="@color/text"
+            android:layout_centerInParent="true"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/home_at_profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@color/colorPrimary"
+            android:tint="@color/text"
+            android:src="@drawable/home" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_background_5"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/ic_launcher_round"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/aldrich"
+                android:text="My Profile"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/text"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/pro_show_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/aldrich"
+                android:text="Frank.ly"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/text"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="25dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="First Name"
+                    app:hintTextColor="@color/text"
+                    app:boxStrokeColor="@color/text"
+                    android:textColorHint="@color/text"
+                    app:boxStrokeWidthFocused="2dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxBackgroundMode="none">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/pro_fname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/aldrich"
+                        android:textColor="@color/text"
+                        android:text="@string/app_name"
+                        android:paddingLeft="10dp"
+                        android:textSize="20sp"
+                        android:enabled="false"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:inputType="none"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Last Name"
+                    app:hintTextColor="@color/text"
+                    app:boxStrokeColor="@color/text"
+                    android:textColorHint="@color/text"
+                    app:boxStrokeWidthFocused="2dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxBackgroundMode="none">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/pro_lname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/aldrich"
+                        android:textColor="@color/text"
+                        android:paddingLeft="10dp"
+                        android:textSize="20sp"
+                        android:text="@string/app_name"
+                        android:enabled="false"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:inputType="none"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="DOB (DD/MM/YYYY)"
+                    app:hintTextColor="@color/text"
+                    app:boxStrokeColor="@color/text"
+                    android:textColorHint="@color/text"
+                    app:boxStrokeWidthFocused="2dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxBackgroundMode="none">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/pro_dob"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/aldrich"
+                        android:textColor="@color/text"
+                        android:paddingLeft="10dp"
+                        android:textSize="20sp"
+                        android:text="@string/app_name"
+                        android:enabled="false"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:inputType="none"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="User ID"
+                    app:hintTextColor="@color/text"
+                    app:boxStrokeColor="@color/text"
+                    android:textColorHint="@color/text"
+                    app:boxStrokeWidthFocused="2dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxBackgroundMode="none">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/pro_user_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/aldrich"
+                        android:textColor="@color/text"
+                        android:paddingLeft="10dp"
+                        android:textSize="20sp"
+                        android:text="@string/app_name"
+                        android:enabled="false"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:inputType="none"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mail ID"
+                    app:hintTextColor="@color/text"
+                    app:boxStrokeColor="@color/text"
+                    android:textColorHint="@color/text"
+                    app:boxStrokeWidthFocused="2dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxBackgroundMode="none">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/pro_mail_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/aldrich"
+                        android:textColor="@color/text"
+                        android:paddingLeft="10dp"
+                        android:textSize="20sp"
+                        android:text="@string/app_name"
+                        android:enabled="false"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:inputType="none"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile No."
+                    app:hintTextColor="@color/text"
+                    app:boxStrokeColor="@color/text"
+                    android:textColorHint="@color/text"
+                    app:boxStrokeWidthFocused="2dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxBackgroundMode="none">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/pro_mobile_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/aldrich"
+                        android:textColor="@color/text"
+                        android:paddingLeft="10dp"
+                        android:textSize="20sp"
+                        android:text="@string/app_name"
+                        android:enabled="false"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:inputType="none"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Designation"
+                    app:hintTextColor="@color/text"
+                    app:boxStrokeColor="@color/text"
+                    android:textColorHint="@color/text"
+                    app:boxStrokeWidthFocused="2dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxBackgroundMode="none">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/pro_designation"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/aldrich"
+                        android:textColor="@color/text"
+                        android:paddingLeft="10dp"
+                        android:textSize="20sp"
+                        android:text="@string/app_name"
+                        android:enabled="false"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:inputType="none"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="30dp">
+
+                <Button
+                    android:id="@+id/edit_profile"
+                    android:layout_width="170dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/button_background"
+                    android:elevation="1dp"
+                    android:layout_gravity="center"
+                    android:text="Edit Profile"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text"
+                    android:fontFamily="@font/aldrich"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="20dp"/>
+
+                    <Button
+                        android:id="@+id/logout"
+                        android:layout_width="150dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/button_background"
+                        android:elevation="1dp"
+                        android:layout_gravity="center"
+                        android:text="Log Out"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textColor="@color/text"
+                        android:fontFamily="@font/aldrich"
+                        android:layout_alignParentRight="true"
+                        android:textSize="20dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
